@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.legd.oriontekdemo">
+
+    <application
+        android:name=".app.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OriontekDemo">
+        <activity
+            android:name=".ui.AddAddressScreen"
+            android:label="@string/add_address_screen"/>
+        <activity
+            android:name=".ui.AddUserScreen"
+            android:label="@string/add_user_screen" />
+        <activity
+            android:name=".ui.UserDetails"
+            android:label="@string/user_details_screen" />
+        <activity
+            android:name=".ui.HomeScreen"
+            android:label="@string/home_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
